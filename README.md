@@ -1,6 +1,6 @@
 # Discord Music Bot
 
-A fully functional music bot for Discord built with Node.js, leveraging the Discord.js library for interacting with the Discord API and Yt-dlp for fetching audio streams from various sources.
+A fully functional music bot for Discord built with Node.js, leveraging the Discord.js library for interacting with the Discord API and `yt-dlp` for fetching audio streams from various sources.
 
 ## Features
 
@@ -11,64 +11,71 @@ A fully functional music bot for Discord built with Node.js, leveraging the Disc
 - **Socks5 Proxy Support**: Stream music through a proxy server to bypass regional restrictions and improve performance.
 
 ## Commands
-- **?play [url]**: This can be a song name, YouTube URL, or Spotify URL.
-- **?loop**: This can be used to loop the current song that is playing. (not fully finished, expect bugs)
+
+- **?play [url]**: Play the specified song. This can be a song name, YouTube URL, or Spotify URL.
+- **?loop**: Toggle looping for the current song that is playing. *(Note: This feature may still have bugs.)*
 - **More commands coming soon, stay tuned!**
 
 ## Installation
 
-## How to install YT-DLP
-*Method 1:* (mainly VPSes)
-- `pip install yt-dlp (easiest)`
-
-
 ### Prerequisites
+
+Make sure you have the following installed on your system:
 
 - Node.js (v16 or higher)
 - npm (Node Package Manager)
 
-### Clone the Repository
+### Step 1: Clone the Repository
 
-```bash
-git clone https://github.com/hw630590/discord-music-bot.git
-cd discord-music-bot
-```
+Open your terminal and run:
+`git clone https://github.com/hw630590/discord-music-bot.git`
+`cd discord-music-bot`
 
-**IMPORTANT STEP!** (if you don't do this, you may experience issues)
-```bash
-chmod +x yt-dlp_linux
-```
+### Step 2: Install YT-DLP
 
-**YT-DLP installations:**
-Method 1: `pip install yt-dlp` (easiest)
+You can install `yt-dlp` using one of the following methods:
 
-Method 2: (harder)
-**WGet (aka winget)**
-- `wget https://github.com/yt-dlp/yt-dlp/releases/download/2025.03.31/yt-dlp_linux`
+#### Method 1: Using pip (easiest way)
 
-**CURL**
-- `curl -LO https://github.com/yt-dlp/yt-dlp/releases/download/2025.03.31/yt-dlp_linux`
+If you have Python installed, run:
+`pip install yt-dlp`
 
-Then, follow these steps:
-- `sudo mv yt-dlp_linux ./discord-music-bot` (**adjust the directory accordingly**)
+#### Method 2: Download the binary directly
 
-### Check if yt-dlp_linux is installed
+- **Using wget**:
+`wget https://github.com/yt-dlp/yt-dlp/releases/download/2025.03.31/yt-dlp_linux`
 
-(adjust the directory accordingly)
+- **Using curl**:
+`curl -LO https://github.com/yt-dlp/yt-dlp/releases/download/2025.03.31/yt-dlp_linux`
 
-```bash
-ls ./discord-music-bot
-```
+### Step 3: Move the yt-dlp binary
 
-### Install Packages (~150mb)
+After downloading, ensure the binary is executable and then move it to the project directory:
+`chmod +x yt-dlp_linux`
+`sudo mv yt-dlp_linux ./discord-music-bot/`
 
-```bash
-npm install discord.js @discordjs/voice @discordjs/opus play-dl ffmpeg-static
-```
+### Step 4: Verify yt-dlp Installation
 
-### Start the bot
-(pterodactyl, prism, or any dash/panel WITH a pre-start command can skip this step)
+Check if **yt-dlp** is in the correct directory:
+`ls ./discord-music-bot`
 
-```bash
-node index.js
-```
+You should see **yt-dlp_linux** listed.
+
+### Step 5: Install Node Packages
+
+Install the required Node.js packages for the bot:
+`npm install discord.js @discordjs/voice @discordjs/opus play-dl ffmpeg-static`
+
+### Step 6: Start the Bot
+
+If you are using a hosting panel like Pterodactyl or Prism with a preset start command, you can skip this step. Otherwise, start the bot by running:
+`node index.js`
+
+## Troubleshooting
+
+- If you encounter issues starting the bot, ensure all dependencies are installed and **yt-dlp_linux** is accessible in the project directory.
+- Check the console output for any error messages for further troubleshooting.
+
+## Contributions
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request with improvements or bug fixes.
