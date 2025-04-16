@@ -75,6 +75,7 @@ If you are using a hosting panel like Pterodactyl or Prism with a preset start c
 
 - If you encounter issues starting the bot, ensure all dependencies are installed and **yt-dlp_linux** is accessible in the project directory.
 - Check the console output for any error messages for further troubleshooting.
+- If you cannot debug it, feel free to open an [issue](https://github.com/hw630590/discord-music-bot/issues).
 
 ## Contributions
 
