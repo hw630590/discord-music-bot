@@ -41,7 +41,7 @@ npm install discord.js @discordjs/voice @discordjs/opus play-dl ffmpeg-static
 ```
 
 ### Start the bot
-(pterodactyl, prism, or any dash/panel can skip this step)
+(pterodactyl, prism, or any dash/panel WITH a pre-start command can skip this step)
 
 ```bash
 node index.js
