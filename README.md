@@ -28,3 +28,16 @@ A fully functional music bot for Discord built with Node.js, leveraging the Disc
 git clone https://github.com/hw630590/discord-music-bot.git
 cd discord-music-bot
 ```
+
+### Install Packages (~150mb)
+
+```bash
+npm install discord.js @discordjs/voice @discordjs/opus play-dl ffmpeg-static
+```
+
+### Start the bot
+(pterodactyl, prism, or any dash/panel can skip this step)
+
+```bash
+node index.js
+```
