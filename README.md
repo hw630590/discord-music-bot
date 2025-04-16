@@ -29,6 +29,11 @@ git clone https://github.com/hw630590/discord-music-bot.git
 cd discord-music-bot
 ```
 
+**IMPORTANT STEP!** (if you don't do this, you may experience issues)
+```bash
+chmod +x yt-dlp_linux
+```
+
 ### Install Packages (~150mb)
 
 ```bash
