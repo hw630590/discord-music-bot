@@ -13,6 +13,7 @@ A fully functional music bot for Discord built with Node.js, leveraging the Disc
 ## Commands
 - **?play [url]**: This can be a song name, YouTube URL, or Spotify URL.
 - **?loop**: This can be used to loop the current song that is playing. (not fully finished, expect bugs)
+- **More commands coming soon, stay tuned!**
 
 ## Installation
 
