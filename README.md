@@ -17,6 +17,11 @@ A fully functional music bot for Discord built with Node.js, leveraging the Disc
 
 ## Installation
 
+## How to install YT-DLP
+*Method 1:* (mainly VPSes)
+- `pip install yt-dlp (easiest)`
+
+
 ### Prerequisites
 
 - Node.js (v16 or higher)
@@ -32,6 +37,27 @@ cd discord-music-bot
 **IMPORTANT STEP!** (if you don't do this, you may experience issues)
 ```bash
 chmod +x yt-dlp_linux
+```
+
+**YT-DLP installations:**
+Method 1: `pip install yt-dlp` (easiest)
+
+Method 2: (harder)
+**WGet (aka winget)**
+- `wget https://github.com/yt-dlp/yt-dlp/releases/download/2025.03.31/yt-dlp_linux`
+
+**CURL**
+- `curl -LO https://github.com/yt-dlp/yt-dlp/releases/download/2025.03.31/yt-dlp_linux`
+
+Then, follow these steps:
+- `sudo mv yt-dlp_linux ./discord-music-bot` (**adjust the directory accordingly**)
+
+### Check if yt-dlp_linux is installed
+
+(adjust the directory accordingly)
+
+```bash
+ls ./discord-music-bot
 ```
 
 ### Install Packages (~150mb)
